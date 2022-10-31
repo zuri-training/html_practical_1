@@ -9,8 +9,9 @@
         body {
             background-color: rgb(222, 241, 213);
             color: rgb(37, 70, 18);
-            margin: auto;
             padding: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
         }
 
         input {
@@ -36,6 +37,20 @@
             padding: 10px;
             color: rgb(37, 70, 18);
         }
+
+        button {
+            width: 80px;
+            margin-top: 10px;
+            padding: 5px 5px 5px 0;
+            color: rgb(37, 70, 18);
+            background-color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(205, 241, 184);
+            transition: 0.5s;
+        }
     </style>
 </head>
 <body>
@@ -56,8 +71,12 @@
             <div>
             <textarea placeholder="Message" cols="30" rows="10"></textarea>
             </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
         </form>
-    </form>
+    </fieldset>
+
 </main>
 </body>
 </html>
